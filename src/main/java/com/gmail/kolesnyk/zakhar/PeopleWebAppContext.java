@@ -14,6 +14,7 @@ import java.util.Objects;
 import static spark.Spark.port;
 
 public class PeopleWebAppContext {
+
     static {
         //spark configuration
         port(8080);
@@ -46,6 +47,5 @@ public class PeopleWebAppContext {
     }
 
 
-    public static void main(String[] args) {
-    }
+    public static void main(String[] args) {}
 }
