@@ -2,8 +2,8 @@ package com.gmail.kolesnyk.zakhar;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.gmail.kolesnyk.zakhar.controller.PeopleController;
-import com.gmail.kolesnyk.zakhar.persistense.pepository.PeopleRepository;
-import com.gmail.kolesnyk.zakhar.persistense.pepository.PeopleRepositoryImpl;
+import com.gmail.kolesnyk.zakhar.persistense.pepository.peopleRepository.PeopleRepository;
+import com.gmail.kolesnyk.zakhar.persistense.pepository.peopleRepository.PeopleRepositoryImpl;
 import com.gmail.kolesnyk.zakhar.service.annotation.Bean;
 import com.gmail.kolesnyk.zakhar.service.peopleService.PeopleService;
 import com.gmail.kolesnyk.zakhar.service.peopleService.PeopleServiceImpl;
