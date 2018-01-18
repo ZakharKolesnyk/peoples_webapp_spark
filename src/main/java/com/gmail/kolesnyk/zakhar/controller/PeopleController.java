@@ -1,6 +1,9 @@
 package com.gmail.kolesnyk.zakhar.controller;
 
 import com.gmail.kolesnyk.zakhar.service.peopleService.PeopleService;
+import spark.Request;
+import spark.Response;
+import spark.Route;
 
 import static spark.Spark.*;
 

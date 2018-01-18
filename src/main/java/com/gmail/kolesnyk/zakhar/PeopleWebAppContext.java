@@ -34,7 +34,7 @@ public class PeopleWebAppContext {
             throw new RuntimeException("bean cannot be null");
         }
         for (Field field : PeopleWebAppContext.class.getDeclaredFields()) {
-            if (field.getType().equals(clazz) || field.isAnnotationPresent(Bean.class)) {
+            if (field.getType().equals(clazz) && field.isAnnotationPresent(Bean.class)) {
                 field.setAccessible(true);
                 try {
                     return (T) field.get(null);
@@ -47,5 +47,7 @@ public class PeopleWebAppContext {
     }
 
 
-    public static void main(String[] args) {}
+    public static void main(String[] args) {
+        //see static block
+    }
 }
