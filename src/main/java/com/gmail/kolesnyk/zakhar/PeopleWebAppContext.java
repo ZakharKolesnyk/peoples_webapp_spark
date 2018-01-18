@@ -1,7 +1,5 @@
 package com.gmail.kolesnyk.zakhar;
 
-//import static spark.debug.DebugScreen.enableDebugScreen;
-
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.gmail.kolesnyk.zakhar.controller.PeopleController;
 import com.gmail.kolesnyk.zakhar.persistense.pepository.PeopleRepository;

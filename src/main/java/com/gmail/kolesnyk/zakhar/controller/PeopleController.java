@@ -2,7 +2,7 @@ package com.gmail.kolesnyk.zakhar.controller;
 
 import com.gmail.kolesnyk.zakhar.service.peopleService.PeopleService;
 
-import static spark.Spark.get;
+import static spark.Spark.*;
 
 public class PeopleController {
 
@@ -14,6 +14,9 @@ public class PeopleController {
     }
 
     private void init() {
-        get("/:id", (request, response) -> "s");
+        get("/people/:id", (req, res) -> peopleService.jsonById(req.params(":id")));
+        get("/people", (req, res) -> peopleService.jsonList());
+        post("/people", (req, res) -> peopleService.save(req.body()));
+        delete("/people/:id", (req, res) -> peopleService.deleteById(req.params(":id")));
     }
 }
